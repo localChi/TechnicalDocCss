@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset UTF-8>
+         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+         <title></title>
+         <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p class="disclaimer">disclaimer: as of making this technical document, this would be personal to help me remember/ understand things that I would normally questions to so I have small changes to the meaning of some things.</p>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="introduction">Introduction</header>
+        <h3>What is CSS?</h3>
+        <p class="indent">CSS, otherwise known as Cascading Style Sheets, is an external stylesheet used to design/customize a webpage (Stylesheet), <span class="red_text">however I would personally call it customizing style sheets.</span></p>
+
+           <p class="indent">Generally when learning CSS you would/should have a basic understanding coding languages such as,HTML.</p>
+    
+    </section>
+    <section class="main-section" id="Basic_info">
+      <header>Basic Info</header>
+        <p>When using CSS you would have an external file containing the CSS that you would have to link to the document/webpage(Stylesheet) with the command:</p>
+            <ul>
+          <li><code>link rel="stylesheet" href="styles.css"</code></li>
+        </ul>
+        <p>You would put this code withing your head tag at the start of a document</p>
+   
+    </section>
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+        <p> CSS consists of a selector and a declaration block.</p>
+        <ul><li><code>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}</code></li></ul>
+        <p>In the code above the * is the selector, the * selector selects all the code of the html document</p>
+        <p>Also in the code above the margin:0;
+          is the declaration block, it declairs that the margin of the page for top, right,bottom, and left will be reset to 0.
+        </p>
+        <p>Within the declaration block there consist of a property and value, the margin in the above code would be the property and the 0 of the above code would be the value.</p>
+  
+    </section>
+    <section class="main-section" id="More_syntax">
+      <header>More Syntax</header>
+        <p> Each declaration includes a CSS property name and a value, separated by a colon.</p>
+        <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces, for exampple: </p>
+          <ul>
+          <li><code>body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}</code>
+</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Selectors">
+      <header>Selectors</header>
+        
+        <p>CSS selectors are used to find/select the HTML elements you want to style.</p>
+        <p>There are five catagories for selectors: </p>
+        <ul>
+          <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+              <li>Pseudo-class selectors (select elements based on a certain state)</li>
+              <li>Pseudo-elements selectors (select and style a part of an element)</li>
+               <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        </ul>
+  
+    </section>
+    <section class="main-section" id="More_selectors">
+      <header>More Selectors</header>
+        <p>A quick example of all selectors:</p>
+        <ul>
+          <li>Simple selector: 
+               <code>* {
+            color: red;
+        }</code>
+          </li>
+          <li>Combinator selector:  <code> div p {
+            color: red;
+        }</code></li>
+          <li>Pseudo-class selector: <code> a:visited {
+  color: #00FF00;
+}</code>
+</li>
+          <li>Pseudo-element selector: p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}</li>
+          <li> Attribute selector: a[target="_blank"] {
+  background-color: yellow;
+}</li>
+        </ul>
+     
+    </section>
+    <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+        <p>A CSS comment starts with /* and ends with */ these invalidate the code making the computer ignore them ex:</p>
+        <ul><li>p {
+  color: red;  /* Set text color to red */
+}
+</li></ul>
+<p>These comments can be made anywhere within the css file as long as it has /* */</p>
+      </header>
+    </section>
+  </main>
+  <nav id="navbar">
+    <header>Navigation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+     <li><a class="nav-link" href="#Basic_info">Basic Info</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#More_syntax">More Syntax</a></li>
+         <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+          <li><a class="nav-link" href="#More_selectors">More Selectors</a></li>
+           <li><a class="nav-link" href="#Comments">Comments</a></li>
+
+    </ul>
+  </nav>
+
+</body>
+</html>
